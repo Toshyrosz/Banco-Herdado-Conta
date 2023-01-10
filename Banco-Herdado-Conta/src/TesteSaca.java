@@ -5,8 +5,12 @@ public class TesteSaca {
 		Conta conta = new ContaCorrente(123, 321);
 		
 		conta.deposita(200);
-		conta.saca(190 );
 		
+		try {
+		conta.saca(210);
+		} catch(Exception ex){
+			System.out.println("Ex: " +ex.getMessage());
+		}
 		System.out.println(conta.getSaldo());
 	}
 

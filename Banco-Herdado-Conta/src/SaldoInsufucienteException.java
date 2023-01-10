@@ -1,5 +1,5 @@
 
-public class SaldoInsufucienteException extends RuntimeException {
+public class SaldoInsufucienteException extends Exception {
 
 	public SaldoInsufucienteException(String msg) {
 		super(msg);

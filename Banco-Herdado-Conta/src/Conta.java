@@ -26,16 +26,16 @@ public class Conta {
 		this.saldo += valor;
 	}
 
-	public void saca(double valor) {
+	public void saca(double valor) throws SaldoInsufucienteException{
 
 		if (this.saldo < valor) {
-			throw new SaldoInsufucienteException("Saldo: "+ this.saldo + ", Valor" + valor);
+			throw new SaldoInsufucienteException("Saldo: "+ this.saldo + ", Valor " + valor);
 		}
 
 		this.saldo -= valor;
 	}
 
-	public void transfere(double valor, Conta destino) {
+	public void transfere(double valor, Conta destino) throws SaldoInsufucienteException{
 		this.saca(valor);
 		destino.deposita(valor);
 	}
