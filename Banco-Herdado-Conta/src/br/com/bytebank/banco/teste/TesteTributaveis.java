@@ -1,3 +1,8 @@
+package br.com.bytebank.banco.teste;
+
+import br.com.bytebank.banco.modelo.CalculardorDeImposto;
+import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.SeguroDeVida;
 
 public class TesteTributaveis {
 
@@ -14,5 +19,7 @@ public class TesteTributaveis {
 	System.out.println(calc.getTotalImposto());
 
 	}
+
+
 
 }

@@ -1,3 +1,5 @@
+package br.com.bytebank.banco.modelo;
+
 public class Conta {
 	public double saldo;
 	private int numero;
@@ -21,7 +23,7 @@ public class Conta {
 		Conta.total = total;
 	}
 
-	void deposita(double valor) {
+	public void deposita(double valor) {
 
 		this.saldo += valor;
 	}
