@@ -4,11 +4,12 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 import br.com.bytebank.banco.modelo.SaldoInsufucienteException;
 
+//br.com.bytebank.banco.teste.TesteContas
 public class TesteContas {
 
+	//java.lang.String
 	public static void main(String[] args) throws SaldoInsufucienteException{
 		
-		//Full Qualified Name FQN
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100);
 
