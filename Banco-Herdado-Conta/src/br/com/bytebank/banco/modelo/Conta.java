@@ -1,9 +1,9 @@
 package br.com.bytebank.banco.modelo;
 
-public class Conta {
-	public double saldo;
-	private int numero;
-	private int agencia;
+public abstract class Conta {
+	protected  double saldo;
+	protected int numero;
+	protected int agencia;
 	private Cliente titular;
 	private static int total;
 
