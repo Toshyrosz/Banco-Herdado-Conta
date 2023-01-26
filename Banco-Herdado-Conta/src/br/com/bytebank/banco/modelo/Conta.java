@@ -22,7 +22,7 @@ public abstract class Conta {
 	
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		System.out.println("total de contas �:" + total);
+		System.out.println("total de contas :" + total);
 		this.agencia = agencia;
 		this.numero = numero;
 		System.out.println("estou criando a conta" + this.numero);
@@ -98,4 +98,9 @@ public abstract class Conta {
 		return titular;
 	}
 
+	@Override
+	public String toString() {
+	return "Numero: " + this.getNumero() + ", Agencia " + this.agencia;
+	}
+	
 }
