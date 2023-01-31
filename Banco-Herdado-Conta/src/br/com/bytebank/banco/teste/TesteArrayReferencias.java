@@ -11,14 +11,9 @@ public class TesteArrayReferencias {
 		
 		ContaCorrente cc1 = new ContaCorrente(22, 11);
 		referencias[0]=cc1;
+		
 		ContaPoupanca cc2 = new ContaPoupanca(22, 12);
 		referencias[1]=cc2;
-		ContaCorrente cc3 = new ContaCorrente(22, 13); 
-		referencias[2]=cc3;
-		ContaCorrente cc4 = new ContaCorrente(22, 14);
-		referencias[3]=cc4;
-		ContaCorrente cc5 = new ContaCorrente(22, 15);
-		referencias[4]=cc5;
 		
 		Cliente cliente = new Cliente();
 		referencias[2]=cliente;
